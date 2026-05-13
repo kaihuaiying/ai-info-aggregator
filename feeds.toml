@@ -1,29 +1,89 @@
 # RSS 订阅列表
 # 每个 feed 需要：url、name（来源显示名）、lang（en/zh）
+# 选源原则：主流 AI、覆盖中英文、尽量使用直接可访问的 RSS/Atom，控制在 50 个左右。
 
-# ── OPC / 创业案例 ────────────────────────────────────────────
+# ── 英文：官方 / 平台 / 模型公司 ─────────────────────────────
 [[feeds]]
-name = "Indie Hackers"
-url = "https://www.indiehackers.com/feed.xml"
-lang = "en"
-
-# Starter Story：无公开 RSS，内容在付费墙后，暂无方案
-# [[feeds]]
-# name = "Starter Story"
-# url = ""
-# lang = "en"
-
-[[feeds]]
-name = "Reddit r/SideProject"
-url = "https://www.reddit.com/r/SideProject/.rss"
+name = "OpenAI News"
+url = "https://openai.com/news/rss.xml"
 lang = "en"
 
 [[feeds]]
-name = "Reddit r/Entrepreneur"
-url = "https://www.reddit.com/r/Entrepreneur/.rss"
+name = "Google DeepMind Blog"
+url = "https://deepmind.google/blog/rss.xml"
 lang = "en"
 
-# ── AI Newsletter ─────────────────────────────────────────────
+[[feeds]]
+name = "Google Blog AI"
+url = "https://blog.google/technology/ai/rss/"
+lang = "en"
+
+[[feeds]]
+name = "Google Research Blog"
+url = "https://research.google/blog/rss/"
+lang = "en"
+
+[[feeds]]
+name = "AWS Machine Learning Blog"
+url = "https://aws.amazon.com/blogs/machine-learning/feed/"
+lang = "en"
+
+[[feeds]]
+name = "Azure AI Blog"
+url = "https://azure.microsoft.com/en-us/blog/topics/ai-machine-learning/feed/"
+lang = "en"
+
+[[feeds]]
+name = "NVIDIA Blog"
+url = "https://blogs.nvidia.com/feed/"
+lang = "en"
+
+[[feeds]]
+name = "Hugging Face Blog"
+url = "https://huggingface.co/blog/feed.xml"
+lang = "en"
+
+[[feeds]]
+name = "PyTorch Blog"
+url = "https://pytorch.org/blog/feed.xml"
+lang = "en"
+
+[[feeds]]
+name = "Cohere Blog"
+url = "https://cohere.com/blog/rss.xml"
+lang = "en"
+
+[[feeds]]
+name = "Ollama Blog"
+url = "https://ollama.com/blog/rss.xml"
+lang = "en"
+
+[[feeds]]
+name = "LangChain Blog"
+url = "https://blog.langchain.dev/rss/"
+lang = "en"
+
+[[feeds]]
+name = "OpenRouter Blog"
+url = "https://openrouter.ai/blog/rss.xml"
+lang = "en"
+
+# ── 英文：研究 / 分析 / Newsletter ───────────────────────────
+[[feeds]]
+name = "Simon Willison"
+url = "https://simonwillison.net/atom/everything/"
+lang = "en"
+
+[[feeds]]
+name = "Latent Space"
+url = "https://www.latent.space/feed"
+lang = "en"
+
+[[feeds]]
+name = "One Useful Thing"
+url = "https://www.oneusefulthing.org/feed"
+lang = "en"
+
 [[feeds]]
 name = "Ben's Bites"
 url = "https://bensbites.com/feed"
@@ -35,70 +95,54 @@ url = "https://rss.beehiiv.com/feeds/2R3C6Bt5wj.xml"
 lang = "en"
 
 [[feeds]]
-name = "One Useful Thing"
-url = "https://www.oneusefulthing.org/feed"
-lang = "en"
-
-[[feeds]]
-name = "Zara's Newsletter"
-url = "https://zarazhang.substack.com/feed"
-lang = "en"
-
-[[feeds]]
 name = "TLDR AI"
 url = "https://tldr.tech/rss/ai"
 lang = "en"
 
 [[feeds]]
-name = "The Batch (deeplearning.ai)"
-url = "https://rsshub.app/deeplearning/the-batch"
+name = "Import AI"
+url = "https://importai.substack.com/feed"
 lang = "en"
 
 [[feeds]]
-name = "Latent Space"
-url = "https://www.latent.space/feed"
+name = "The Gradient"
+url = "https://thegradient.pub/rss/"
 lang = "en"
 
 [[feeds]]
-name = "Lenny's Newsletter"
-url = "https://lennysnewsletter.com/feed"
-lang = "en"
-
-# ── AI 技术 / 模型 ────────────────────────────────────────────
-[[feeds]]
-name = "Simon Willison's Blog"
-url = "https://simonwillison.net/atom/everything/"
+name = "BAIR Blog"
+url = "https://bair.berkeley.edu/blog/feed.xml"
 lang = "en"
 
 [[feeds]]
-name = "Hugging Face Blog"
-url = "https://huggingface.co/blog/feed.xml"
+name = "Stanford HAI News"
+url = "https://hai.stanford.edu/news/rss.xml"
 lang = "en"
 
 [[feeds]]
-name = "Hacker News Show HN"
-url = "https://hnrss.org/show"
+name = "OpenCV Blog"
+url = "https://opencv.org/blog/feed/"
 lang = "en"
 
 [[feeds]]
-name = "Reddit r/LocalLLaMA"
-url = "https://www.reddit.com/r/LocalLLaMA/.rss"
+name = "arXiv cs.AI"
+url = "https://rss.arxiv.org/rss/cs.AI"
 lang = "en"
 
 [[feeds]]
-name = "GitHub Trending"
-url = "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+name = "arXiv cs.CL"
+url = "https://rss.arxiv.org/rss/cs.CL"
 lang = "en"
 
-# ── 科技媒体（英文）──────────────────────────────────────────
-[[feeds]]
-name = "VentureBeat AI"
-url = "https://venturebeat.com/category/ai/feed/"
-lang = "en"
-
+# ── 英文：主流媒体 / 行业报道 ───────────────────────────────
 [[feeds]]
 name = "TechCrunch AI"
 url = "https://techcrunch.com/category/artificial-intelligence/feed/"
+lang = "en"
+
+[[feeds]]
+name = "VentureBeat AI"
+url = "https://venturebeat.com/category/ai/feed/"
 lang = "en"
 
 [[feeds]]
@@ -106,26 +150,19 @@ name = "MIT Technology Review AI"
 url = "https://www.technologyreview.com/topic/artificial-intelligence/feed"
 lang = "en"
 
-# ── 商业趋势 ──────────────────────────────────────────────────
 [[feeds]]
-name = "Trends.vc"
-url = "https://trends.vc/feed"
+name = "The Verge AI"
+url = "https://www.theverge.com/artificial-intelligence/rss/index.xml"
 lang = "en"
 
 [[feeds]]
-name = "Product Hunt"
-url = "https://www.producthunt.com/feed"
-lang = "en"
-
-# ── AI + 电商 ────────────────────────────────────────────────
-[[feeds]]
-name = "Practical Ecommerce"
-url = "https://www.practicalecommerce.com/feed"
+name = "The Decoder"
+url = "https://the-decoder.com/feed/"
 lang = "en"
 
 [[feeds]]
-name = "Shopify Blog"
-url = "https://www.shopify.com/blog.atom"
+name = "Zilliz Blog"
+url = "https://zilliz.com/blog/rss.xml"
 lang = "en"
 
 [[feeds]]
@@ -134,21 +171,26 @@ url = "https://www.marketingaiinstitute.com/blog/rss.xml"
 lang = "en"
 
 [[feeds]]
-name = "Search Engine Journal (Ecommerce)"
-url = "https://www.searchenginejournal.com/category/ecommerce/feed/"
+name = "MarkTechPost"
+url = "https://www.marktechpost.com/feed/"
 lang = "en"
 
 [[feeds]]
-name = "eCommerceFuel"
-url = "https://www.ecommercefuel.com/feed/"
+name = "unite.ai"
+url = "https://www.unite.ai/feed/"
 lang = "en"
 
 [[feeds]]
-name = "eCommerceBytes"
-url = "https://www.ecommercebytes.com/feed/"
+name = "AI News"
+url = "https://www.artificialintelligence-news.com/feed/"
 lang = "en"
 
-# ── 中文 AI 媒体 ──────────────────────────────────────────────
+[[feeds]]
+name = "Analytics India Mag"
+url = "https://analyticsindiamag.com/feed/"
+lang = "en"
+
+# ── 中文：主流 AI 媒体 ──────────────────────────────────────
 [[feeds]]
 name = "量子位"
 url = "https://www.qbitai.com/feed"
@@ -165,13 +207,13 @@ url = "https://36kr.com/feed"
 lang = "zh"
 
 [[feeds]]
-name = "少数派"
-url = "https://sspai.com/feed"
+name = "爱范儿"
+url = "https://www.ifanr.com/feed"
 lang = "zh"
 
 [[feeds]]
-name = "爱范儿"
-url = "https://www.ifanr.com/feed"
+name = "少数派"
+url = "https://sspai.com/feed"
 lang = "zh"
 
 [[feeds]]
@@ -180,15 +222,25 @@ url = "https://plink.anyfeeder.com/geekpark"
 lang = "zh"
 
 [[feeds]]
-name = "晚点 LatePost"
-url = "https://rsshub.app/latepost"
+name = "InfoQ AI"
+url = "https://www.infoq.cn/feed/ai"
 lang = "zh"
 
-# 虎嗅：反爬超时，暂停，待后续寻找替代方案
-# [[feeds]]
-# name = "虎嗅"
-# url = "https://www.huxiu.com/rss/0.xml"
-# lang = "zh"
+[[feeds]]
+name = "腾讯研究院"
+url = "https://www.tisi.org/feed"
+lang = "zh"
+
+# ── 中文：平台 / 研究机构 / 开发者生态 ───────────────────────
+[[feeds]]
+name = "华为昇思 MindSpore"
+url = "https://www.mindspore.cn/en/rss.xml"
+lang = "zh"
+
+[[feeds]]
+name = "阿里云 AI"
+url = "https://www.alibabacloud.com/blog/topics/ai-machine-learning/rss.xml"
+lang = "zh"
 
 # ── 微信公众号（via WeWe RSS）────────────────────────────────
 [[feeds]]
@@ -201,37 +253,3 @@ name = "卡尔的AI沃茨"
 url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3871977637.atom"
 lang = "zh"
 
-[[feeds]]
-name = "饼干哥哥AGI"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_2394281674.atom"
-lang = "zh"
-
-[[feeds]]
-name = "刘小排r"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3251517810.atom"
-lang = "zh"
-
-[[feeds]]
-name = "沃垠AI"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3201599457.atom"
-lang = "zh"
-
-[[feeds]]
-name = "AGI Hunt"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3087832081.atom"
-lang = "zh"
-
-[[feeds]]
-name = "一泽Eze"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3234547650.atom"
-lang = "zh"
-
-[[feeds]]
-name = "赛博禅心"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3934419561.atom"
-lang = "zh"
-
-[[feeds]]
-name = "第二曲线增长"
-url = "https://app-production-ad4a.up.railway.app/feeds/MP_WXS_3293993092.atom"
-lang = "zh"
