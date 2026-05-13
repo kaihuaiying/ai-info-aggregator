@@ -63,7 +63,7 @@
 
 | Name | Value |
 |------|-------|
-| `OPENROUTER_API_KEY` | 你的 OpenRouter API Key |
+| `DEEPSEEK_API_KEY` | 你的 deepseek API Key |
 
 ### 第四步：启用 Actions
 
@@ -96,14 +96,11 @@
 
 | 方向 | 来源 |
 |------|------|
-| OPC/创业案例 | Indie Hackers · Reddit r/SideProject · Reddit r/Entrepreneur |
-| AI Newsletter | Ben's Bites · The Rundown AI · One Useful Thing · Zara's Newsletter · TLDR AI · The Batch · Latent Space · Lenny's Newsletter |
-| AI 技术 | Simon Willison · Hugging Face Blog · Hacker News Show HN · Reddit r/LocalLLaMA · GitHub Trending |
-| 科技媒体（英文） | VentureBeat AI · TechCrunch AI · MIT Technology Review |
-| 商业趋势 | Trends.vc · Product Hunt |
-| AI + 电商 | Practical Ecommerce · Shopify Blog · Marketing AI Institute · SEJ Ecommerce · eCommerceFuel · eCommerceBytes |
-| 中文媒体 | 量子位 · 机器之心 · 36氪 · 少数派 · 爱范儿 · 极客公园 · 晚点 LatePost |
-| 微信公众号 | 数字生命卡兹克 · 卡尔的AI沃茨 · 饼干哥哥AGI · 刘小排r · 沃垠AI · AGI Hunt · 一泽Eze · 赛博禅心 · 第二曲线增长 |
+| 官方 / 平台 / 模型公司 | OpenAI News · Google DeepMind Blog · Google Blog AI · Google Research Blog · AWS Machine Learning Blog · Azure AI Blog · NVIDIA Blog · Hugging Face Blog · PyTorch Blog · Cohere Blog · Ollama Blog · LangChain Blog · OpenRouter Blog |
+| 研究 / 分析 / Newsletter | Simon Willison · Latent Space · One Useful Thing · Ben's Bites · The Rundown AI · TLDR AI · Import AI · The Gradient · BAIR Blog · Stanford HAI News · OpenCV Blog · arXiv cs.AI · arXiv cs.CL |
+| 英文媒体 / 行业报道 | TechCrunch AI · VentureBeat AI · MIT Technology Review AI · The Verge AI · The Decoder · Zilliz Blog · Marketing AI Institute · MarkTechPost · unite.ai · AI News · Analytics India Mag |
+| 中文媒体 / 产业观察 | 量子位 · 机器之心 · 36氪 · 爱范儿 · 少数派 · 极客公园 · InfoQ AI · 腾讯研究院 |
+| 中文平台 / 研究机构 | 华为昇思 MindSpore · 阿里云 AI |
 
 在 `feeds.toml` 中增删信息源：
 
@@ -142,7 +139,7 @@ pip install -r requirements.txt
 
 # 配置 API Key
 cp .env.example .env
-# 编辑 .env，填入你的 OPENROUTER_API_KEY
+# 编辑 .env，填入你的 DEEPSEEK_API_KEY
 
 # 运行（需先 export 环境变量）
 export $(cat .env | xargs)
@@ -180,7 +177,7 @@ ai-info-aggregator/
 ## 技术栈
 
 - **Python 3.11+** · feedparser · requests
-- **OpenRouter**（Claude Haiku 评分/去重，Claude Sonnet 摘要）
+- **LLM**（deepseek 评分/去重/摘要）
 - **GitHub Actions**（定时调度，免费额度够用）
 - **Obsidian Git**（本地同步，可选）
 
