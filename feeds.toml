@@ -124,16 +124,6 @@ name = "OpenCV Blog"
 url = "https://opencv.org/blog/feed/"
 lang = "en"
 
-[[feeds]]
-name = "arXiv cs.AI"
-url = "https://rss.arxiv.org/rss/cs.AI"
-lang = "en"
-
-[[feeds]]
-name = "arXiv cs.CL"
-url = "https://rss.arxiv.org/rss/cs.CL"
-lang = "en"
-
 # ── 英文：主流媒体 / 行业报道 ───────────────────────────────
 [[feeds]]
 name = "TechCrunch AI"
